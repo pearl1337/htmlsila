@@ -16,24 +16,35 @@
                     <div class="form-rows">
                         <div class="form-row">
                             <label for="login" class="form-label">Login</label>
-                            <input type="text" id="login" autocomplete="off" class="form-control" placeholder="Login">
+                            <input type="text" id="login" autocomplete="off" class="form-control" placeholder="Login" required>
                         </div>
                         <div class="form-row">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" id="password" autocomplete="off" class="form-control" placeholder="Password">
+                            <input type="password" id="password" autocomplete="off" class="form-control" placeholder="Password" required>
                         </div>
                         <div class="form-row">
                             <label for="ConfirmPassword" class="form-label">Confirm password</label>
-                            <input type="password" id="ConfirmPassword" autocomplete="off" class="form-control" placeholder="Confirm password">
+                            <input type="password" id="ConfirmPassword" autocomplete="off" class="form-control" placeholder="Confirm password" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="firstName" class="form-label">Fitst name</label>
+                            <input type="text" id="firstName" autocomplete="off" class="form-control" placeholder="Fitst name" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" id="lastName" autocomplete="off" class="form-control" placeholder="Last name" required>
                         </div>
                         <div class="form-row">
                             <label for="Role" class="form-label">Role</label>
-                            <input type="password" id="Role" autocomplete="off" class="form-control" placeholder="Role">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Student</option>
+                                <option>Teacher</option>
+                            </select>
                         </div>
                     </div>
                     <div>
                         <div class="button-wrap">
-                            <button class="btn btn-primary">Register</button>
+                            <button class="btn btn-primary" id="registerBtn">Register</button>
                         </div>
                         <div class="links-wrap">
                             <a href="main.html">Login</a>
@@ -43,6 +54,7 @@
             </form>
         </div>
     </div>
+    <script src="js/register.js"></script>
 </body>
 <style>
 .wraper{
